@@ -11,6 +11,10 @@ const MAX_MILLISECONDS = 99;
 
 // Function to start the Stopwatch
 function startTimer() {
+    if(timerInterval) {
+        return;
+    }
+    
     startTime = Date.now() - elapsedTime;
     timerInterval = setInterval(function () {
         elapsedTime = Date.now() - startTime;
