@@ -11,9 +11,7 @@ const MAX_MILLISECONDS = 99;
 
 // Function to start the Stopwatch
 function startTimer() {
-    if(timerInterval) {
-        return;
-    }
+    clearInterval(timerInterval);
     
     startTime = Date.now() - elapsedTime;
     timerInterval = setInterval(function () {
@@ -24,12 +22,13 @@ function startTimer() {
         document.getElementById("display").innerText =
             `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}:${milliseconds.toString().padStart(2, "0")}`;
 
-        if(minutes === MAX_MINUTES && seconds === MAX_SECONDS && milliseconds === MAX_MILLISECONDS) {
+        if (minutes === MAX_MINUTES && seconds === MAX_SECONDS && milliseconds === MAX_MILLISECONDS) {
             clearInterval(timerInterval);
             alert("Maximum Time Reached!!");
         }
     }, 10);
 }
+
 
 // Function to stop the Stopwatch
 function stopTimer() {
@@ -40,7 +39,8 @@ function stopTimer() {
 function resetTimer() {
     clearInterval(timerInterval);
     elapsedTime = 0;
-    timerInterval = null;
+    // timerInterval = null;
+    // startTime = null;
     document.getElementById("display").innerText = "00:00:00";
 }
 
