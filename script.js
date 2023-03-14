@@ -40,6 +40,7 @@ function stopTimer() {
 function resetTimer() {
     clearInterval(timerInterval);
     elapsedTime = 0;
+    timerInterval = null;
     document.getElementById("display").innerText = "00:00:00";
 }
 
