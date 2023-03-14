@@ -1,0 +1,82 @@
+/* Website Background Color */
+body {
+    background-color: #C1E6FF;
+}
+
+/* Stopwatch Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* Stopwatch Box CSS */
+.stopwatch-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 20rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 5rem;
+}
+
+/* MM:SS:MS format */
+#display {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+/* Buttons Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button CSS */
+button {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Assigning Respective Colors */
+#startBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#startBtn:hover {
+    background-color: #3e8e41;
+}
+
+#stopBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+#stopBtn:hover {
+    background-color: #c62828;
+}
+
+#resetBtn {
+    background-color: blue;
+    color: white;
+}
+
+#resetBtn:hover {
+    background-color: darkblue;
+}
