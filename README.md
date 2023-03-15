@@ -1,5 +1,6 @@
 # Project: Stopwatch
 Technologies Used: HTML, CSS and JavaScript
+Hosted Website Link: https://beingsonalisoni.github.io/stopwatch/
 
 Description:
 
